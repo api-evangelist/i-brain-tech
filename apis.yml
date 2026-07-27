@@ -1,7 +1,29 @@
 aid: i-brain-tech
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/i-brain-tech.png
 name: i-Brain Tech
-description: i-Brain Tech is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  i-Brain Tech is a neuroscience company building a brain-controlled training platform for
+  sports performance. Its core product is a video game driven exclusively by an athlete's brain
+  impulses through motor-imagery and neurofeedback, requiring no physical movement. The platform
+  is applied to three areas: post-injury neuromuscular recovery and return-to-play readiness,
+  player development through cognitive and tactical training without physical strain, and
+  cognitive assessment that surfaces mental resilience, attention, and endurance from real brain
+  data. Elite football clubs including Real Sociedad, Juventus FC, CD Leganes, Olympique
+  Lyonnais, S.L. Benfica, and Seattle Reign FC use the platform. i-Brain Tech is a Techstars
+  portfolio company. It currently exposes no public developer API, SDK, or documentation surface;
+  this profile captures its public identity and domain-security posture in the API Evangelist
+  network.
 url: https://raw.githubusercontent.com/api-evangelist/i-brain-tech/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Sports
+- Neuroscience
+- Neurofeedback
+- Health
+- Rehabilitation
+- Cognitive Training
+- Athletics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +50,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/i-brain-tech-domain-security.yml
 - type: Website
   url: https://i-brain.tech/
+- type: Login
+  url: https://play.i-brain.tech/
+- type: PrivacyPolicy
+  url: https://i-brain.tech/privacy-policy
+- type: TermsOfService
+  url: https://i-brain.tech/terms-of-use
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
